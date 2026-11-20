@@ -1,0 +1,29 @@
+# Compiled executables
+/main
+/variables
+*.out
+
+# Object and library files
+*.o
+*.a
+*.so
+*.dylib
+
+# Build directories
+/build/
+/bin/
+
+# Debugging and crash artifacts
+core
+core.*
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
