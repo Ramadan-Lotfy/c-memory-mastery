@@ -1,7 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 
+
+bool create_integer(int **ptr, int value) {
+    if (ptr == NULL) {
+        return false;
+    }
+
+    int *p = malloc(sizeof *p);
+
+    if (p == NULL) {
+        return false;
+    }
+
+    *p = value;
+    *ptr = p;
+
+    return true;
+}
+
+void update(int ***ptr) {
+    if (ptr == NULL || *ptr == NULL || **ptr == NULL) {
+        return;
+    }
+
+    ***ptr = 999;
+}
 
 int main(void) {
     int number = 10;
